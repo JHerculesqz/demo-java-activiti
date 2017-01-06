@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DroolsController {
+public class ActivitiController {
 	// #region Fields
 
 	@Autowired
-	private DroolsService droolsService;
+	private ActivitiService activitiService;
 
 	// #endregion
 
@@ -19,7 +19,7 @@ public class DroolsController {
 	@RequestMapping("/hello")
 	@ResponseBody
 	public String hello() {
-		return this.droolsService.hello();
+		return this.activitiService.hello();
 	}
 
 	// #endregion
